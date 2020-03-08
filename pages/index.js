@@ -1,20 +1,18 @@
 import React from 'react';
 
 import Head from '../components/head';
+import Nav from '../components/Nav';
 import Body from '../components/Body';
-
-import '../sass/index.scss';
+import Footer from '../components/Footer';
 
 const Home = () => {
-  const currentYear = new Intl.DateTimeFormat('en-US', {
-    year: 'numeric'
-  }).format(new Date());
-
   return (
-    <>
+    <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
       <Head title="brettf • engineer" />
+      <Nav />
       <Body />
-    </>
+      <Footer />
+    </div>
   );
 };
 

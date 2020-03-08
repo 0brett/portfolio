@@ -2,7 +2,7 @@ import React from 'react';
 import NextHead from 'next/head';
 import { string } from 'prop-types';
 
-const defaultDescription = '';
+const defaultDescription = 'Full Stack Engineering Portfolio of BrettF';
 const defaultOGURL = '';
 const defaultOGImage = '';
 
