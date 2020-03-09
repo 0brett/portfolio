@@ -15,7 +15,7 @@ const Footer = () => {
       padding={24}
       borderRadius={4}
     >
-      <Text>© {currentYear} 🥑brettf ‹•› Crafted by Hand-ish</Text>
+      <Text>© {currentYear} 🥑 brettf ‹•› I love 🥑 </Text>
     </Pane>
   );
 };
