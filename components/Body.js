@@ -1,44 +1,73 @@
 import React from 'react';
 
-import { Pane, Text } from 'evergreen-ui';
-import Card from './Card';
+import { Pane } from 'evergreen-ui';
+import Project from './Project';
 
 const Body = () => {
   return (
-    <Pane
-      display="flex"
-      flexFlow="row wrap"
-      justifyContent="space-between"
-      marginBottom={16}
-    >
-      <Card
-        img="/code.jpg"
+    <div className="grid">
+      <Project
+        img="/poem.jpg"
         title="Horse_eBooks Poem Generator"
         desc="Mobile-first React with React Router app for generating a poem from the historical tweets of Twitter account @horse_ebooks."
         tech="React, React Router, Node.js, Express.js, Knex, SQLite"
-        role="Development, Design"
+        role="Full Stack Development, Design"
         app="https://epoems.glitch.me/"
         code="https://github.com/notbrett/horse_epoems"
       />
-      <Card
-        img="/code.jpg"
+      <Project
+        img="/bible.jpg"
         title="Bible Translation Medley"
         desc="Single Page React App to fetch Bible text and allow a reader to dynamically “swap” individual verses in context with different translations."
         tech="React, Redux, Redux Thunk, Node.js, Express.js"
-        role="Development, Design"
+        role="Full Stack Development, Design"
         app="https://medley.glitch.me/"
         code="https://github.com/notbrett/translation-medley"
       />
-      <Card
-        img="/code.jpg"
+      <Project
+        img="/tools.jpg"
         title="Foreman Tool Tracker"
         desc="Mobile-first React app for a construction company’s foreman to be able to easily view, report, and request tools from the company’s central Shop."
         tech="React, React Router, Bootstrap/Reactstrap, Airtable"
-        role="Development, Design"
+        role="Full Stack Development, Design"
         app="https://tmtools.now.sh"
         code="https://github.com/notbrett/tools"
       />
-    </Pane>
+      <Project
+        img="/nasa.jpg"
+        title="NASA's Photo of the Day"
+        desc="React app that pulls the current Space photo of the day from NASA's API. Back-tracking through dates loosely supported."
+        tech="React"
+        role="Development"
+        app="https://brett-apod.netlify.com/"
+        code="https://github.com/notbrett/nasa-photo-of-the-day"
+      />
+      <Project
+        img="/wedding.jpg"
+        title="Wedding Planner Portfolio"
+        desc="The Marketing/Landing page for potential clients of a Wedding Planner."
+        tech="HTML, LESS, Flexbox, Grid"
+        role="Development"
+        app="https://weddinghome.netlify.com/"
+        code="https://github.com/Build-Week-Wedding-Planner-Portfolio/Marketing"
+      />
+      <style jsx>{`
+        .grid {
+          display: grid;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 550px) {
+          .grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (min-width: 824px) {
+          .grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+      `}</style>
+    </div>
   );
 };
 

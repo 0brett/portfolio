@@ -12,9 +12,7 @@ const Footer = () => {
       display="flex"
       justifyContent="center"
       background="tint2"
-      margin={8}
-      marginBottom={24}
-      padding={8}
+      padding={24}
       borderRadius={4}
     >
       <Text>© {currentYear} 🥑brettf ‹•› Crafted by Hand-ish</Text>
