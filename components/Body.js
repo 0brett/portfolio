@@ -12,7 +12,7 @@ const Body = () => {
         desc="Mobile-first React with React Router app for generating a poem from the historical tweets of Twitter account @horse_ebooks."
         tech="React, React Router, Node.js, Express.js, Knex, SQLite"
         role="Full Stack Development, Design"
-        app="https://epoems.glitch.me/"
+        app="https://epoems.herokuapp.com/"
         code="https://github.com/notbrett/horse_epoems"
       />
       <Project
