@@ -12,7 +12,7 @@ const Body = () => {
         desc="Mobile-first React with React Router app for generating a poem from the historical tweets of Twitter account @horse_ebooks."
         tech="React, React Router, Node.js, Express.js, Knex, SQLite"
         role="Full Stack Development, Design"
-        app="https://epoems.herokuapp.com/"
+        app="https://epoems.herokuapp.com"
         code="https://github.com/notbrett/horse_epoems"
       />
       <Project
@@ -21,7 +21,7 @@ const Body = () => {
         desc="Single Page React App to fetch Bible text and allow a reader to dynamically “swap” individual verses in context with different translations."
         tech="React, Redux, Redux Thunk, Node.js, Express.js"
         role="Full Stack Development, Design"
-        app="https://medley.glitch.me/"
+        app="https://medley.glitch.me"
         code="https://github.com/notbrett/translation-medley"
       />
       <Project
@@ -39,7 +39,7 @@ const Body = () => {
         desc="React app that pulls the current Space photo of the day from NASA's API. Back-tracking through dates loosely supported."
         tech="React"
         role="Development"
-        app="https://brett-apod.netlify.com/"
+        app="https://brett-apod.netlify.com"
         code="https://github.com/notbrett/nasa-photo-of-the-day"
       />
       <Project
@@ -48,8 +48,17 @@ const Body = () => {
         desc="The Marketing/Landing page for potential clients of a Wedding Planner."
         tech="HTML, LESS, Flexbox, Grid"
         role="Development"
-        app="https://weddinghome.netlify.com/"
+        app="https://weddinghome.netlify.com"
         code="https://github.com/Build-Week-Wedding-Planner-Portfolio/Marketing"
+      />
+      <Project
+        img="/code.jpg"
+        title="Simple Calculator"
+        desc="Wired up the logic for a simple calculator."
+        tech="React, Flexbox, Grid"
+        role="Development"
+        app="https://brett-calc.netlify.com"
+        code="https://github.com/notbrett/lambda-calculator"
       />
       <style jsx>{`
         .grid {
