@@ -5,8 +5,8 @@ import { Pane, Button, Heading, Paragraph, Text, Strong } from 'evergreen-ui';
 export default function(props) {
   return (
     <Pane maxWidth="25rem" margin={8} padding={8}>
-      <img src={props.img} style={{ marginBottom: '8px', width: '100%' }} />
-      <Pane marginBottom={8}>
+      <img src={props.img} style={{ marginBottom: '4px', width: '100%' }} />
+      <Pane marginBottom={12}>
         <Button
           is="a"
           target="_blank"

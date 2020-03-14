@@ -8,14 +8,8 @@ const Footer = () => {
   }).format(new Date());
 
   return (
-    <Pane
-      display="flex"
-      justifyContent="center"
-      background="tint2"
-      padding={24}
-      borderRadius={4}
-    >
-      <Text>© {currentYear} 🥑 brettf ‹•› I love 🥑 </Text>
+    <Pane display="flex" justifyContent="center" padding={24} borderRadius={4}>
+      <Text>©{currentYear} brettf ‹•› I love 🥑 </Text>
     </Pane>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Pane } from 'evergreen-ui';
 import Project from './Project';
 
 const Body = () => {
