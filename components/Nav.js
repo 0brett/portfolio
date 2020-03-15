@@ -13,7 +13,7 @@ const Nav = () => {
       <div>
         <Button
           is="a"
-          href="https://linkedin.com/in/brett-flora"
+          href="https://linkedin.com/in/notbrett"
           appearance="minimal"
         >
           LinkedIn
