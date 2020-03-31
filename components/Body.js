@@ -59,22 +59,6 @@ const Body = () => {
         app="https://brett-calc.netlify.com"
         code="https://github.com/notbrett/lambda-calculator"
       />
-      <style jsx>{`
-        .grid {
-          display: grid;
-          margin-bottom: 16px;
-        }
-        @media (min-width: 550px) {
-          .grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
-        @media (min-width: 824px) {
-          .grid {
-            grid-template-columns: repeat(3, 1fr);
-          }
-        }
-      `}</style>
     </div>
   );
 };

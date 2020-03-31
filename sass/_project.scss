@@ -1,0 +1,40 @@
+.card {
+  margin: 0 0 1rem 0;
+
+  @include bk(550px) {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  img {
+    margin-bottom: 1rem;
+    border-radius: 2px;
+  }
+}
+
+.sources {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  a {
+    width: 47.5%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border: 1px solid $blue;
+    text-align: center;
+    border-radius: 2px;
+
+    &:first-of-type {
+      color: #fff;
+      background-color: $blue;
+    }
+  }
+}
+
+.text {
+  h3,
+  p {
+    margin-bottom: 0.5rem;
+  }
+}

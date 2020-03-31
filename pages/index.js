@@ -8,14 +8,7 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div
-      style={{
-        maxWidth: '64rem',
-        margin: '0 auto',
-        display: 'grid',
-        justifyItems: 'center'
-      }}
-    >
+    <div className="main">
       <Head title="brettf • engineer" />
       <Nav />
       <Intro />
