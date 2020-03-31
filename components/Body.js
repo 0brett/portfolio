@@ -17,10 +17,10 @@ const Body = () => {
       <Project
         img="/bible.jpg"
         title="Bible Translation Medley"
-        desc="Single Page React App to fetch Bible text and allow a reader to dynamically “swap” individual verses in context with different translations."
+        desc="Single Page React App to fetch Bible text and allow a reader to dynamically “swap” individual verses in context with different translations. API deployed on Heroku."
         tech="React, Redux, Redux Thunk, Node.js, Express.js"
         role="Full Stack Development, Design"
-        app="https://medley.glitch.me"
+        app="https://medley.now.sh"
         code="https://github.com/notbrett/translation-medley"
       />
       <Project
