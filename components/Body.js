@@ -8,7 +8,7 @@ const Body = () => {
       <Project
         img="/poem.jpg"
         title="Horse_eBooks Poem Generator"
-        desc="Mobile-first React with React Router app for generating a poem from the historical tweets of Twitter account @horse_ebooks."
+        desc="React using React Router for generating a poem from the historical tweets of famous spam-bot Twitter account, @horse_ebooks. Uses Node/Express to dynamically save generated poems to a URL UUID in a SQLite3 database."
         tech="React, React Router, Node.js, Express.js, Knex, SQLite"
         role="Full Stack Development, Design"
         app="https://epoems.herokuapp.com"
@@ -17,7 +17,7 @@ const Body = () => {
       <Project
         img="/bible.jpg"
         title="Bible Translation Medley"
-        desc="Single Page React App to fetch Bible text and allow a reader to dynamically “swap” individual verses in context with different translations. API deployed on Heroku."
+        desc='Single Page React App to fetch Bible text from various APIs and allow a user to dynamically "swap" individual verses in context with different translations. Uses Redux for state management and Node/Express API.'
         tech="React, Redux, Redux Thunk, Node.js, Express.js"
         role="Full Stack Development, Design"
         app="https://medley.now.sh"
@@ -26,7 +26,7 @@ const Body = () => {
       <Project
         img="/tools.jpg"
         title="Foreman Tool Tracker"
-        desc="Mobile-first React app for a construction company’s foreman to be able to easily view, report, and request tools from the company’s central Shop."
+        desc="Built a mobile-first React app for a construction company's foreman to be able to easily view, report, and request tools from the company's central Shop. Uses Airtable on the backend."
         tech="React, React Router, Bootstrap/Reactstrap, Airtable"
         role="Full Stack Development, Design"
         app="https://tmtools.now.sh"
@@ -35,7 +35,7 @@ const Body = () => {
       <Project
         img="/nasa.jpg"
         title="NASA's Photo of the Day"
-        desc="React app that pulls the current Space photo of the day from NASA's API. Back-tracking through dates loosely supported."
+        desc="React app using the official NASA API and Moment.js for date traversal. Shows the NASA space photo of the day and allows for going back to previous day’s photos."
         tech="React"
         role="Development"
         app="https://brett-apod.netlify.com"
@@ -53,7 +53,7 @@ const Body = () => {
       <Project
         img="/code.jpg"
         title="Simple Calculator"
-        desc="Wired up the logic for a simple calculator."
+        desc="HTML, CSS, and JavaScript with logic to match the “basic” calculators from the 80s/90s and the default one on the iPhone."
         tech="React, Flexbox, Grid"
         role="Development"
         app="https://brett-calc.netlify.com"
