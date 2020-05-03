@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default function(props) {
+export default function (props) {
   return (
     <div className="card">
       <img src={props.img} />
       <div className="sources">
         <a target="_blank" href={props.app}>
-          View App
+          Live App
         </a>
         <a target="_blank" href={props.code}>
-          View Code
+          Github
         </a>
       </div>
       <div className="text">
