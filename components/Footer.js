@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
   const currentYear = new Intl.DateTimeFormat('en-US', {
     year: 'numeric'
-  }).format(new Date());
+  }).format(new Date())
 
   return (
     <footer>
-      <p>©{currentYear} brettf ‹•› I love 🥑 </p>
+      <p>©{currentYear} Brett Flora ‹•› I love 🥑 </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
