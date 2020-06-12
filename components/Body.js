@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import Project from './Project';
+import Project from './Project'
 
 const Body = () => {
   return (
@@ -32,35 +32,8 @@ const Body = () => {
         app="https://tmtools.now.sh"
         code="https://github.com/notbrett/tools"
       />
-      <Project
-        img="/nasa.jpg"
-        title="NASA's Photo of the Day"
-        desc="React app using the official NASA API and Moment.js for date traversal. Shows the NASA space photo of the day and allows for going back to previous day’s photos."
-        tech="React"
-        role="Development"
-        app="https://brett-apod.netlify.com"
-        code="https://github.com/notbrett/nasa-photo-of-the-day"
-      />
-      <Project
-        img="/wedding.jpg"
-        title="Wedding Planner Portfolio"
-        desc="The Marketing/Landing page for potential clients of a Wedding Planner."
-        tech="HTML, LESS, Flexbox, Grid"
-        role="Development"
-        app="https://weddinghome.netlify.com"
-        code="https://github.com/Build-Week-Wedding-Planner-Portfolio/Marketing"
-      />
-      <Project
-        img="/code.jpg"
-        title="Simple Calculator"
-        desc="HTML, CSS, and JavaScript with logic to match the “basic” calculators from the 80s/90s and the default one on the iPhone."
-        tech="React, Flexbox, Grid"
-        role="Development"
-        app="https://brett-calc.netlify.com"
-        code="https://github.com/notbrett/lambda-calculator"
-      />
     </div>
-  );
-};
+  )
+}
 
-export default Body;
+export default Body
