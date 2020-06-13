@@ -8,8 +8,8 @@ const Body = () => {
       <Project
         img="/poem.jpg"
         title="Horse_eBooks Poem Generator"
-        desc="React using React Router for generating a poem from the historical tweets of famous spam-bot Twitter account, @horse_ebooks. Uses Node/Express to dynamically save generated poems to a URL UUID in a SQLite3 database."
-        tech="React, React Router, Node.js, Express.js, Knex, SQLite"
+        desc="React using React Router for generating a poem from the historical tweets of famous spam-bot Twitter account, @horse_ebooks. Uses Node/Express to dynamically save generated poems to a URL UUID in a PostgreSQL database on Heroku."
+        tech="React, React Router, Node.js, Express.js, Knex, PostgreSQL, Heroku"
         role="Full Stack Development, Design"
         app="https://epoems.herokuapp.com"
         code="https://github.com/notbrett/horse_epoems"
