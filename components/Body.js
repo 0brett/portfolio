@@ -30,7 +30,7 @@ const Body = () => {
         tech="React, React Router, Bootstrap/Reactstrap, Airtable, Vercel"
         role="Full Stack Development, Design"
         app="https://tmtools.now.sh"
-        code="https://github.com/notbrett/tools"
+        code="https://github.com/TotalMechanical/tools"
       />
     </div>
   )
