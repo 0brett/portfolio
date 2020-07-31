@@ -6,8 +6,4 @@
   @include bk(550px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @include bk(824px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
