@@ -12,7 +12,7 @@ const Body = () => {
         tech="React, Emotion.js, Next.js, NoSQL, Vercel"
         role="Full Stack Development, Design"
         app="https://epoems.now.sh"
-        code="https://github.com/notbrett/poems"
+        code="https://github.com/1brettf/poems"
       />
       <Project
         img="/bible.jpg"
@@ -21,7 +21,7 @@ const Body = () => {
         tech="React, Redux, Node.js, Express.js"
         role="Full Stack Development, Design"
         app="https://medley.now.sh"
-        code="https://github.com/notbrett/translation-medley"
+        code="https://github.com/1brettf/translation-medley"
       />
       <Project
         img="/tools.jpg"
@@ -30,7 +30,7 @@ const Body = () => {
         tech="React, React Router, Bootstrap/Reactstrap, Airtable, Vercel"
         role="Full Stack Development, Design"
         app="https://tmtools.now.sh"
-        code="https://github.com/TotalMechanical/tools"
+        code="https://github.com/1brettf/tools"
       />
     </div>
   )
