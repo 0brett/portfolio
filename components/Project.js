@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function (props) {
   return (
@@ -15,15 +15,7 @@ export default function (props) {
       <div className="text">
         <h3>{props.title}</h3>
         <p>{props.desc}</p>
-        <p>
-          <strong>Tech Used: </strong>
-          {props.tech}
-        </p>
-        <p>
-          <strong>Role: </strong>
-          {props.role}
-        </p>
       </div>
     </div>
-  );
+  )
 }
