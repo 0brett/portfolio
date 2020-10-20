@@ -5,8 +5,8 @@ const Nav = () => {
     <nav>
       <h1>BRETT FLORA</h1>
       <div className="links">
-        <a href="https://linkedin.com/in/1brett">LinkedIn</a>
-        <a href="https://github.com/1brettf">Github</a>
+        <a href="https://linkedin.com/in/bx10f">LinkedIn</a>
+        <a href="https://github.com/bx10f">Github</a>
       </div>
     </nav>
   )
