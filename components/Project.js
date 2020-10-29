@@ -1,9 +1,14 @@
 import React from 'react'
+import ImgWithFallback from './ImgWithFallback'
 
-export default function (props) {
+export default function Project(props) {
   return (
     <div className="card">
-      <img src={props.img} />
+      <ImgWithFallback
+        src={`/${props.img}.webp`}
+        fallback={`/${props.img}.jpg`}
+        alt={props.alt}
+      />
       <div className="sources">
         <a target="_blank" href={props.app}>
           Live App
