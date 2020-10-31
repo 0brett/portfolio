@@ -1,12 +1,12 @@
-import React from 'react';
-import NextHead from 'next/head';
-import { string } from 'prop-types';
+import * as React from 'react'
+import NextHead from 'next/head'
+import { string } from 'prop-types'
 
-const defaultDescription = 'Full Stack Engineering Portfolio of BrettF';
-const defaultOGURL = '';
-const defaultOGImage = '';
+const defaultDescription = 'Full Stack Engineering Portfolio of BrettF'
+const defaultOGURL = ''
+const defaultOGImage = ''
 
-const Head = props => (
+const Head = (props) => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{props.title || 'brettf.me'}</title>
@@ -29,13 +29,13 @@ const Head = props => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
   </NextHead>
-);
+)
 
 Head.propTypes = {
   title: string,
   description: string,
   url: string,
   ogImage: string
-};
+}
 
-export default Head;
+export default Head
