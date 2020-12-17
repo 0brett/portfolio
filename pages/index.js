@@ -1,19 +1,46 @@
-import * as React from 'react'
+import Container from "components/Container"
+import Projects from "components/Projects"
+import LatestDays from "components/LatestDays"
 
-import Head from '../components/Head'
-import Nav from '../components/Nav'
-import Body from '../components/Body'
-import Footer from '../components/Footer'
-
-const Home = () => {
+export default function Home() {
   return (
-    <div className="main">
-      <Head title="Brett Flora • Engineer" />
-      <Nav />
-      <Body />
-      <Footer />
-    </div>
+    <Container title="Home">
+      <section className="mt-8 mb-4 prose xs:mt-12 md:mt-16 dark:prose-dark">
+        <h1>Hey, I'm glad you're here.</h1>
+        <p>
+          I'm Brett Flora. I'm a software engineer. Earlier in my career, I was
+          a UX Designer. I enjoy building things for people. You've found my
+          hodgepodge of projects, essays, experiments, one-offs, and other non
+          sequiturs.
+        </p>
+        <p>
+          I'm Brett Flora. I'm a software engineer. Earlier in my career, I was
+          a UX Designer. I enjoy building things for people. You've found my
+          hodgepodge of projects, essays, experiments, one-offs, and other non
+          sequiturs. I'm Brett Flora. I'm a software engineer. Earlier in my
+          career, I was a UX Designer. I enjoy building things for people.
+          You've found my hodgepodge of projects, essays, experiments, one-offs,
+          and other non sequiturs. I'm Brett Flora. I'm a software engineer.
+          Earlier in my career, I was a UX Designer. I enjoy building things for
+          people. You've found my hodgepodge of projects, essays, experiments,
+          one-offs, and other non sequiturs. I'm Brett Flora. I'm a software
+          engineer. Earlier in my career, I was a UX Designer. I enjoy building
+          things for people. You've found my hodgepodge of projects, essays,
+          experiments, one-offs, and other non sequiturs. I'm Brett Flora. I'm a
+          software engineer. Earlier in my career, I was a UX Designer. I enjoy
+          building things for people. You've found my hodgepodge of projects,
+          essays, experiments, one-offs, and other non sequiturs. I'm Brett
+          Flora. I'm a software engineer. Earlier in my career, I was a UX
+          Designer. I enjoy building things for people. You've found my
+          hodgepodge of projects, essays, experiments, one-offs, and other non
+          sequiturs. I'm Brett Flora. I'm a software engineer. Earlier in my
+          career, I was a UX Designer. I enjoy building things for people.
+          You've found my hodgepodge of projects, essays, experiments, one-offs,
+          and other non sequiturs.
+        </p>
+      </section>
+      <Projects />
+      <LatestDays />
+    </Container>
   )
 }
-
-export default Home

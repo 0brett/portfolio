@@ -1,6 +1,15 @@
-import '../sass/index.scss';
+import "tailwindcss/tailwind.css"
 
-// This default export is required in a new `pages/_app.js` file.
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import { ThemeProvider } from "next-themes"
+import Head from "next/head"
+
+export default function App({ Component, pageProps }) {
+  return (
+    <ThemeProvider attribute="class">
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  )
 }
