@@ -11,7 +11,6 @@
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.1.0",
     "next": "10.0.3",
-    "next-google-fonts": "^1.2.1",
     "next-themes": "^0.0.10",
     "postcss": "^8.2.1",
     "react": "17.0.1",

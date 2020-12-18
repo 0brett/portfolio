@@ -1,4 +1,5 @@
 import NextLink from "next/link"
+import urls from "utils/sitemap"
 
 const currentYear = new Intl.DateTimeFormat("en-US", {
   year: "numeric"
@@ -11,7 +12,7 @@ export default function Footer() {
         <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-1.5">
           <div>
             <h3 className="mb-2 text-xl font-black">Brett Flora</h3>
-            <p>I'm glad you stopped by.</p>
+            <p>Thank you for stopping by.</p>
           </div>
           <p className="hidden mt-4 text-sm text-gray-600 dark:text-gray-300 sm:mt-0 sm:block">
             © 2011–{currentYear} Brett Flora. All rights reserved.
@@ -20,12 +21,11 @@ export default function Footer() {
         <section className="grid grid-cols-subfooter gap-x-4 sm:mt-1.5">
           <div>
             <FooterHeading>SITEMAP</FooterHeading>
-            <FooterNextLink href="/">Home</FooterNextLink>
-            <FooterNextLink href="/projects">Projects</FooterNextLink>
-            <FooterNextLink href="/blog">Blog</FooterNextLink>
-            <FooterNextLink href="/days-of-code">
-              100 Days Of Code
-            </FooterNextLink>
+            {urls.map((url, idx) => (
+              <FooterNextLink key={idx} href={url.href}>
+                {url.text}
+              </FooterNextLink>
+            ))}
           </div>
           <div>
             <FooterHeading>LINKS</FooterHeading>

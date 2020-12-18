@@ -10,12 +10,12 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1456px"
+      "2xl": "1496px"
     },
     extend: {
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans]
-      },
+      // fontFamily: {
+      //   serif: ["Source Serif Pro", ...defaultTheme.fontFamily.serif]
+      // },
       gridTemplateColumns: {
         footer: "3fr 2fr",
         subfooter: "2fr 1fr"
@@ -23,67 +23,42 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.gray.700"),
             a: {
-              color: theme("colors.blue.500"),
+              color: theme("colors.blue.600"),
               "&:hover": {
-                color: theme("colors.blue.700")
-              },
-              code: { color: theme("colors.blue.400") }
+                textDecoration: "none"
+              }
             },
-            "h1,h2,h3,h4": {
+            "h1,h2,h3,h4,h5,h6": {
+              fontWeight: 900,
               "scroll-margin-top": defaultTheme.spacing[32]
             },
-            code: { color: theme("colors.pink.500") },
-            "blockquote p:first-of-type::before": false,
-            "blockquote p:last-of-type::after": false
+            // p: {
+            //   fontFamily: theme("fontFamily.serif").join(", ")
+            // },
+            strong: { fontWeight: 700 }
+            // "blockquote p:first-of-type::before": false,
+            // "blockquote p:last-of-type::after": false
           }
         },
         dark: {
           css: {
-            color: theme("colors.gray.300"),
+            color: theme("colors.gray.100"),
             a: {
-              color: theme("colors.blue.400"),
-              "&:hover": {
-                color: theme("colors.blue.600")
-              },
-              code: { color: theme("colors.blue.400") }
+              color: theme("colors.blue.300")
             },
-            blockquote: {
-              borderLeftColor: theme("colors.gray.700"),
-              color: theme("colors.gray.300")
-            },
-            "h1,h2,h3,h4": {
-              color: theme("colors.gray.100"),
-              "scroll-margin-top": defaultTheme.spacing[32]
-            },
-            hr: { borderColor: theme("colors.gray.700") },
-            ol: {
-              li: {
-                "&:before": { color: theme("colors.gray.500") }
-              }
-            },
-            ul: {
-              li: {
-                "&:before": { backgroundColor: theme("colors.gray.500") }
-              }
-            },
-            strong: { color: theme("colors.gray.300") },
-            thead: {
+            "h1,h2,h3,h4,h5,h6": {
               color: theme("colors.gray.100")
+              // "scroll-margin-top": defaultTheme.spacing[32]
             },
-            tbody: {
-              tr: {
-                borderBottomColor: theme("colors.gray.700")
-              }
-            }
+            strong: { color: theme("colors.gray.200") }
           }
         }
       })
     }
   },
   variants: {
-    typography: ["dark"]
+    typography: ["responsive", "dark"]
   },
   plugins: [require("@tailwindcss/typography")]
 }
