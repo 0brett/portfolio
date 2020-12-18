@@ -13,7 +13,7 @@ export default function Project(props) {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              ariaHidden="true"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
