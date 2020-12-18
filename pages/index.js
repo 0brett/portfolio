@@ -1,6 +1,6 @@
 import Container from "components/Container"
 import Projects from "components/Projects"
-import LatestDays from "components/LatestDays"
+// import LatestDays from "components/LatestDays"
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
         </p>
       </section>
       <Projects />
-      <LatestDays />
+      {/* <LatestDays /> */}
     </Container>
   )
 }

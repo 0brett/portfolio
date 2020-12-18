@@ -12,7 +12,7 @@ export default function Footer() {
         <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-1.5">
           <div>
             <h3 className="mb-2 text-xl font-black">Brett Flora</h3>
-            <p>Thank you for stopping by.</p>
+            <p>Thanks for stopping by.</p>
           </div>
           <p className="hidden mt-4 text-sm text-gray-600 dark:text-gray-300 sm:mt-0 sm:block">
             © 2011–{currentYear} Brett Flora. All rights reserved.
