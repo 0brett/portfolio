@@ -1,4 +1,4 @@
-import NextLink from "next/link"
+// import NextLink from "next/link"
 
 export default function Project(props) {
   return (
