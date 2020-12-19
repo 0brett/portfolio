@@ -11,7 +11,7 @@ export default function Container(props) {
       <Nav />
       <main
         className={
-          props.main ? props.main : "w-full min-h-screen max-w-2xl px-4 mx-auto"
+          props.main ? props.main : "w-full min-h-screen max-w-2xl px-3 mx-auto"
         }
       >
         {props.children}

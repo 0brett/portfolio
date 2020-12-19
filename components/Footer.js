@@ -8,7 +8,7 @@ const currentYear = new Intl.DateTimeFormat("en-US", {
 export default function Footer() {
   return (
     <div className="w-full py-8 mt-8 bg-gray-100 dark:bg-gray-800 sm:pt-16 sm:mt-16">
-      <footer className="grid max-w-2xl px-4 mx-auto sm:grid-cols-footer">
+      <footer className="grid max-w-2xl px-3 mx-auto sm:grid-cols-footer">
         <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-1.5">
           <div>
             <h3 className="mb-2 text-xl font-black">Brett Flora</h3>
