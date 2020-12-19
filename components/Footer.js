@@ -69,6 +69,8 @@ function FooterLink(props) {
     <a
       href={props.href}
       className="block py-1 text-gray-900 xs:mb-0 xs:mr-4 dark:text-gray-100 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {props.children}
     </a>
