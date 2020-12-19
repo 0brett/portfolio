@@ -9,7 +9,11 @@ export default function Container(props) {
         <title>{props.title}Brett Flora • Engineer</title>
       </Head>
       <Nav />
-      <main className="w-full min-h-screen max-w-2xl px-4 mx-auto">
+      <main
+        className={
+          props.main ? props.main : "w-full min-h-screen max-w-2xl px-4 mx-auto"
+        }
+      >
         {props.children}
       </main>
       <Footer />
