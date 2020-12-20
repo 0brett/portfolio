@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <FooterHeading>LINKS</FooterHeading>
             <FooterLink href="https://github.com/brettflora">GitHub</FooterLink>
-            <FooterLink href="https://twitter.com/brettflora_">
+            <FooterLink href="https://twitter.com/1brett_">
               Twitter
             </FooterLink>
             <FooterLink href="https://linkedin.com/in/1brett">
