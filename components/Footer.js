@@ -7,14 +7,14 @@ const currentYear = new Intl.DateTimeFormat("en-US", {
 
 export default function Footer() {
   return (
-    <div className="w-full py-8 mt-8 bg-gray-100 dark:bg-gray-800 sm:pt-16 sm:mt-16">
+    <div className="w-full py-8 mt-8 text-gray-600 bg-gray-100 dark:text-gray-300 dark:bg-gray-800 sm:pt-16 sm:mt-16">
       <footer className="grid max-w-2xl px-3 mx-auto sm:grid-cols-footer">
         <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-3">
           <div>
-            <h3 className="mb-2 text-xl font-black">Brett Flora</h3>
+            <h3 className="mb-3 text-xl font-black">Brett Flora</h3>
             <p>Thanks for stopping by.</p>
           </div>
-          <p className="hidden sm:block border-transparent border-b-2 text-sm text-gray-600 dark:text-gray-300">
+          <p className="hidden sm:block border-transparent border-b-2 text-sm">
             © 2011–{currentYear} Brett Flora. All rights reserved.
           </p>
         </section>
@@ -38,7 +38,7 @@ export default function Footer() {
             </FooterLink>
           </div>
         </section>
-        <p className="mt-4 text-sm text-gray-600 sm:hidden dark:text-gray-300">
+        <p className="mt-4 text-sm sm:hidden">
           © 2011–{currentYear} Brett Flora. All rights reserved.
         </p>
       </footer>
@@ -47,14 +47,10 @@ export default function Footer() {
 }
 
 function FooterHeading(props) {
-  return (
-    <h4 className="mb-2 text-sm font-black text-gray-600 dark:text-gray-300">
-      {props.children}
-    </h4>
-  )
+  return <h4 className="mb-0.5 text-sm font-black">{props.children}</h4>
 }
 
-const linkStyles = "block py-3 text-gray-900 dark:text-gray-100 hover:underline"
+const linkStyles = "block py-3 hover:underline"
 
 function FooterNextLink(props) {
   return (
