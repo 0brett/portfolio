@@ -48,7 +48,7 @@ export default function Footer() {
 
 function FooterHeading(props) {
   return (
-    <h4 className="text-sm font-black text-gray-500 dark:text-gray-400">
+    <h4 className="text-sm font-black text-gray-600 dark:text-gray-300">
       {props.children}
     </h4>
   )
