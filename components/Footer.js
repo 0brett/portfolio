@@ -14,10 +14,7 @@ export default function Footer() {
             <h3 className="mb-2 text-xl font-black">Brett Flora</h3>
             <p>Thanks for stopping by.</p>
           </div>
-          <p
-            className="hidden sm:block border-transparent text-sm text-gray-600 dark:text-gray-300"
-            style={{ borderBottomWidth: "1px" }}
-          >
+          <p className="hidden sm:block border-transparent border-b-2 text-sm text-gray-600 dark:text-gray-300">
             © 2011–{currentYear} Brett Flora. All rights reserved.
           </p>
         </section>
@@ -51,7 +48,7 @@ export default function Footer() {
 
 function FooterHeading(props) {
   return (
-    <h4 className="text-sm font-black text-gray-600 dark:text-gray-300">
+    <h4 className="mb-2 text-sm font-black text-gray-600 dark:text-gray-300">
       {props.children}
     </h4>
   )
