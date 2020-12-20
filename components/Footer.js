@@ -9,12 +9,15 @@ export default function Footer() {
   return (
     <div className="w-full py-8 mt-8 bg-gray-100 dark:bg-gray-800 sm:pt-16 sm:mt-16">
       <footer className="grid max-w-2xl px-3 mx-auto sm:grid-cols-footer">
-        <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-1.5">
+        <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-3">
           <div>
             <h3 className="mb-2 text-xl font-black">Brett Flora</h3>
             <p>Thanks for stopping by.</p>
           </div>
-          <p className="hidden mt-4 text-sm text-gray-600 dark:text-gray-300 sm:mt-0 sm:block">
+          <p
+            className="hidden sm:block border-transparent text-sm text-gray-600 dark:text-gray-300"
+            style={{ borderBottomWidth: "1px" }}
+          >
             © 2011–{currentYear} Brett Flora. All rights reserved.
           </p>
         </section>
@@ -54,12 +57,12 @@ function FooterHeading(props) {
   )
 }
 
+const linkStyles = "block py-3 text-gray-900 dark:text-gray-100 hover:underline"
+
 function FooterNextLink(props) {
   return (
     <NextLink href={props.href}>
-      <a className="block py-1 text-gray-900 xs:mb-0 xs:mr-4 dark:text-gray-100 hover:underline">
-        {props.children}
-      </a>
+      <a className={linkStyles}>{props.children}</a>
     </NextLink>
   )
 }
@@ -68,7 +71,7 @@ function FooterLink(props) {
   return (
     <a
       href={props.href}
-      className="block py-1 text-gray-900 xs:mb-0 xs:mr-4 dark:text-gray-100 hover:underline"
+      className={linkStyles}
       target="_blank"
       rel="noopener noreferrer"
     >

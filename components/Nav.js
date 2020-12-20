@@ -56,7 +56,7 @@ function NavLink(props) {
   return (
     <NextLink href={props.href}>
       <a
-        className={`p-3 mb-4 rounded-sm sm:mb-0 sm:mr-3 w-max ${linkText} ${linkBg}`}
+        className={`py-3 px-4 mb-4 rounded sm:mb-0 sm:mr-4 w-max ${linkText} ${linkBg}`}
       >
         {props.children}
       </a>
