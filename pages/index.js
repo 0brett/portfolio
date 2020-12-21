@@ -5,7 +5,7 @@ import Projects from "components/Projects"
 export default function Home() {
   return (
     <Container>
-      <section className="mt-8 mb-4 prose prose-lg xs:mt-12 md:mt-16 dark:prose-dark">
+      <section className="mt-8 mb-4 prose prose-lg dark:prose-dark xs:mt-12 md:mt-16">
         <h1>Hey, I'm glad you're here.</h1>
         <p>
           My name is <strong>Brett Flora</strong>. I'm a software engineer based

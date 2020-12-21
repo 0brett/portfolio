@@ -5,8 +5,8 @@ export default function Project(props) {
     // <NextLink href={props.href}>
     <a href={props.href} target="_blank" rel="noopener noreferrer">
       <div className="group mt-8">
-        <div className="flex items-center group-hover:opacity-70">
-          <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+        <div className="flex items-center">
+          <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white group-hover:bg-blue-100 group-hover:text-blue-500">
             <svg
               className="h-8 w-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -23,11 +23,11 @@ export default function Project(props) {
               />
             </svg>
           </div>
-          <h3 className="ml-4 text-xl font-semibold text-gray-900 dark:text-gray-100 md:text-2xl group-hover:underline">
+          <h3 className="ml-4 text-xl font-semibold md:text-2xl group-hover:text-blue-500">
             {props.title}
           </h3>
         </div>
-        <p className="mt-3 text-base text-gray-600 dark:text-gray-300 md:text-lg group-hover:opacity-70">
+        <p className="mt-3 text-lg leading-8 text-gray-700 dark:text-gray-100">
           {props.desc}
         </p>
       </div>
