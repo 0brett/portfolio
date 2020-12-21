@@ -23,13 +23,11 @@ export default function Project(props) {
               />
             </svg>
           </div>
-          <h3 className="ml-4 text-xl font-semibold md:text-2xl group-hover:text-blue-500">
+          <h3 className="ml-4 text-xl font-semibold md:text-2xl group-hover:text-blue-500 dark:group-hover:text-blue-300">
             {props.title}
           </h3>
         </div>
-        <p className="mt-3 text-lg leading-8 text-gray-700 dark:text-gray-100">
-          {props.desc}
-        </p>
+        <p className="mt-3 text-lg leading-8">{props.desc}</p>
       </div>
     </a>
     // </NextLink>

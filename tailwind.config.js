@@ -23,6 +23,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            color: theme("colors.gray.900"),
             a: {
               color: theme("colors.blue.600"),
               "&:hover": {
@@ -34,7 +35,7 @@ module.exports = {
               "scroll-margin-top": defaultTheme.spacing[32]
             },
             // p: {
-            //   fontFamily: theme("fontFamily.serif").join(", ")
+            // fontFamily: theme("fontFamily.serif").join(", ")
             // },
             strong: { fontWeight: 700 }
             // "blockquote p:first-of-type::before": false,
