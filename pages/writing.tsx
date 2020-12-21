@@ -1,8 +1,9 @@
 import Container from "components/Container"
 
-export default function Words(props) {
+export default function Writing() {
   return (
-    <Container title="Words – ">
+    <Container title="Writing">
+      <h2>Writing</h2>
       <h3>Coming Soon...</h3>
     </Container>
   )

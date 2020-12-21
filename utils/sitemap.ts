@@ -1,4 +1,9 @@
-export default [
+type url = {
+  href: string
+  text: string
+}
+
+const urls: url[] = [
   {
     href: "/",
     text: "home"
@@ -8,8 +13,8 @@ export default [
     text: "/projects"
   },
   {
-    href: "/words",
-    text: "/words"
+    href: "/writing",
+    text: "/writing"
   },
   {
     href: "/days-of-code",
@@ -20,3 +25,5 @@ export default [
     text: "/dsgn"
   }
 ]
+
+export default urls

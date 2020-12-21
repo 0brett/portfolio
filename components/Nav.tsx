@@ -52,13 +52,13 @@ export default function Nav() {
   )
 }
 
-function NavLink(props) {
+function NavLink({ href, children }) {
   return (
-    <NextLink href={props.href}>
+    <NextLink href={href}>
       <a
         className={`py-3 px-4 mb-4 rounded sm:mb-0 sm:mr-4 w-max ${linkText} ${linkBg}`}
       >
-        {props.children}
+        {children}
       </a>
     </NextLink>
   )

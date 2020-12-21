@@ -1,8 +1,9 @@
 import Container from "components/Container"
 
-export default function DaysOfCode(props) {
+export default function Projects() {
   return (
-    <Container title="#100DaysOfCode – ">
+    <Container title="Projects">
+      <h2>Projects</h2>
       <h3>Coming Soon...</h3>
     </Container>
   )
