@@ -1,6 +1,6 @@
-import Project from "components/Project"
+import Project, { ProjectProps } from "components/Project"
 
-const featuredProjects = [
+const featuredProjects: ProjectProps[] = [
   {
     href: "https://github.com/01brett/translation-medley",
     icon:
@@ -34,7 +34,7 @@ export default function Projects() {
         Featured Projects
       </h2>
 
-      {featuredProjects.map((proj, idx) => (
+      {featuredProjects.map((proj: ProjectProps, idx: number) => (
         <Project
           key={idx}
           href={proj.href}

@@ -11,12 +11,12 @@ const sun =
 
 const linkText = "text-gray-700 dark:text-gray-300"
 
-const linkBg =
-  "bg-gray-100 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-600"
+const linkBg = "bg-gray-100 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-600"
 
 export default function Nav() {
   const [mounted, setMounted] = React.useState(false)
   const { theme, setTheme } = useTheme()
+
   // After mounting, we have access to the theme
   React.useEffect(() => setMounted(true), [])
 
@@ -52,12 +52,15 @@ export default function Nav() {
   )
 }
 
-function NavLink({ href, children }) {
+type NavLinkProps = {
+  href: string
+  children: React.ReactNode
+}
+
+function NavLink({ href, children }: NavLinkProps) {
   return (
     <NextLink href={href}>
-      <a
-        className={`py-3 px-4 mb-4 rounded sm:mb-0 sm:mr-4 w-max ${linkText} ${linkBg}`}
-      >
+      <a className={`py-3 px-4 mb-4 rounded sm:mb-0 sm:mr-4 w-max ${linkText} ${linkBg}`}>
         {children}
       </a>
     </NextLink>

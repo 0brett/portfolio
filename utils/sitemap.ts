@@ -1,9 +1,9 @@
-type url = {
+type Url = {
   href: string
   text: string
 }
 
-const urls: url[] = [
+const urls: Url[] = [
   {
     href: "/",
     text: "home"

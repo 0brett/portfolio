@@ -1,3 +1,4 @@
+import * as React from "react"
 import NextLink from "next/link"
 import urls from "utils/sitemap"
 
@@ -31,9 +32,7 @@ export default function Footer() {
             <FooterHeading>LINKS</FooterHeading>
             <FooterLink href="https://github.com/01brett">GitHub</FooterLink>
             <FooterLink href="https://twitter.com/1brett_">@1brett_</FooterLink>
-            <FooterLink href="https://linkedin.com/in/1brett">
-              LinkedIn
-            </FooterLink>
+            <FooterLink href="https://linkedin.com/in/1brett">LinkedIn</FooterLink>
           </div>
         </section>
         <p className="mt-4 text-sm sm:hidden">
@@ -44,29 +43,33 @@ export default function Footer() {
   )
 }
 
-function FooterHeading(props) {
-  return <h4 className="mb-0.5 text-sm font-black">{props.children}</h4>
+type FooterHeadingProps = {
+  children: React.ReactNode
+}
+
+function FooterHeading({ children }: FooterHeadingProps) {
+  return <h4 className="mb-0.5 text-sm font-black">{children}</h4>
+}
+
+type FooterLinkProps = {
+  href: string
+  children: React.ReactNode
 }
 
 const linkStyles = "block py-3 hover:underline"
 
-function FooterNextLink(props) {
+function FooterNextLink({ href, children }: FooterLinkProps) {
   return (
-    <NextLink href={props.href}>
-      <a className={linkStyles}>{props.children}</a>
+    <NextLink href={href}>
+      <a className={linkStyles}>{children}</a>
     </NextLink>
   )
 }
 
-function FooterLink(props) {
+function FooterLink({ href, children }: FooterLinkProps) {
   return (
-    <a
-      href={props.href}
-      className={linkStyles}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {props.children}
+    <a href={href} className={linkStyles} target="_blank" rel="noopener noreferrer">
+      {children}
     </a>
   )
 }

@@ -1,5 +1,5 @@
 import "tailwindcss/tailwind.css"
-import type { AppProps /*, AppContext */ } from "next/app"
+import type { AppProps } from "next/app"
 import { ThemeProvider } from "next-themes"
 import Head from "next/head"
 
