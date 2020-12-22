@@ -20,5 +20,8 @@
     "@types/react": "^17.0.0",
     "typescript": "^4.1.3"
   },
+  "repository": {
+    "url": "https://github.com/01brett/1brett"
+  },
   "license": "MIT"
 }
