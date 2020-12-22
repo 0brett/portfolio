@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
-  darkMode: 'class', // false or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     screens: {
       xs: '490px',
@@ -34,12 +34,7 @@ module.exports = {
               fontWeight: 900,
               'scroll-margin-top': defaultTheme.spacing[32]
             },
-            // p: {
-            // fontFamily: theme("fontFamily.serif").join(", ")
-            // },
             strong: { fontWeight: 700 }
-            // "blockquote p:first-of-type::before": false,
-            // "blockquote p:last-of-type::after": false
           }
         },
         dark: {
