@@ -60,7 +60,7 @@ type NavLinkProps = {
 function NavLink({ href, children }: NavLinkProps) {
   return (
     <NextLink href={href}>
-      <a className={`py-3 px-4 mb-4 rounded sm:mb-0 sm:mr-4 w-max ${linkText} ${linkBg}`}>
+      <a className={`py-3 px-3.5 mb-4 rounded sm:mb-0 sm:mr-4 w-max ${linkText} ${linkBg}`}>
         {children}
       </a>
     </NextLink>

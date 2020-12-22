@@ -30,9 +30,9 @@ export default function Footer() {
           </div>
           <div>
             <FooterHeading>LINKS</FooterHeading>
-            <FooterLink href="https://github.com/01brett">GitHub</FooterLink>
             <FooterLink href="https://twitter.com/1brett_">@1brett_</FooterLink>
-            <FooterLink href="https://linkedin.com/in/1brett">LinkedIn</FooterLink>
+            <FooterLink href="https://github.com/01brett">github</FooterLink>
+            <FooterLink href="https://linkedin.com/in/1brett">linkedin</FooterLink>
           </div>
         </section>
         <p className="mt-4 text-sm sm:hidden">
