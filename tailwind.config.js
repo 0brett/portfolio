@@ -13,9 +13,9 @@ module.exports = {
       "2xl": "1496px"
     },
     extend: {
-      // fontFamily: {
-      //   serif: ["Source Serif Pro", ...defaultTheme.fontFamily.serif]
-      // },
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+      },
       gridTemplateColumns: {
         footer: "3fr 2fr",
         subfooter: "2fr 1fr"

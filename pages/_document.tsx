@@ -31,22 +31,16 @@ class MyDocument extends Document {
             sizes="16x16"
             type="image/png"
           />
-          <link
-            color="#4a9885"
-            href="/static/favicons/safari-pinned-tab.svg"
-            rel="mask-icon"
-          />
+          <link color="#4a9885" href="/static/favicons/safari-pinned-tab.svg" rel="mask-icon" />
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
-          <meta
-            content="/static/favicons/browserconfig.xml"
-            name="msapplication-config"
-          />
+          <meta content="/static/favicons/browserconfig.xml" name="msapplication-config" />
           <meta
             name="description"
             content="Software engineer, former UX Designer, and avocado enthusiast."
           />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
         <body className="text-gray-900 bg-white dark:text-gray-100 dark:bg-gray-900">
           <Main />
