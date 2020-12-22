@@ -5,24 +5,24 @@ type Url = {
 
 const urls: Url[] = [
   {
-    href: "/",
-    text: "home"
+    href: '/',
+    text: 'home'
   },
   {
-    href: "/projects",
-    text: "/projects"
+    href: '/projects',
+    text: '/projects'
   },
   {
-    href: "/writing",
-    text: "/writing"
+    href: '/writing',
+    text: '/writing'
   },
   {
-    href: "/days-of-code",
-    text: "#100DaysOfCode"
+    href: '/days-of-code',
+    text: '#100DaysOfCode'
   },
   {
-    href: "/dsgn",
-    text: "/dsgn"
+    href: '/dsgn',
+    text: '/dsgn'
   }
 ]
 
