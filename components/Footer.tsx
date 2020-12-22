@@ -1,24 +1,14 @@
-import * as React from "react"
-import NextLink from "next/link"
-import urls from "utils/sitemap"
+import * as React from 'react'
+import NextLink from 'next/link'
+import urls from 'utils/sitemap'
 
-const currentYear = new Intl.DateTimeFormat("en-US", {
-  year: "numeric"
-}).format(new Date())
+const currentYear = new Date().getFullYear()
 
 export default function Footer() {
   return (
     <div className="w-full py-8 mt-8 text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-800 sm:pt-16 sm:mt-16">
       <footer className="grid max-w-2xl px-3 mx-auto sm:grid-cols-footer">
-        <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-3">
-          <div>
-            <h3 className="mb-3 text-xl font-black">Brett Flora</h3>
-            <p>Thanks for stopping by.</p>
-          </div>
-          <p className="hidden sm:block border-transparent border-b-2 text-sm">
-            © 2011–{currentYear} Brett Flora. All rights reserved.
-          </p>
-        </section>
+        <FooterIntro />
         <section className="grid grid-cols-subfooter gap-x-4 sm:mt-1.5">
           <div>
             <FooterHeading>SITEMAP</FooterHeading>
@@ -43,6 +33,20 @@ export default function Footer() {
   )
 }
 
+function FooterIntro() {
+  return (
+    <section className="flex flex-col justify-between mb-8 sm:mb-0 sm:pb-3">
+      <div>
+        <h3 className="mb-3 text-xl font-black">Brett Flora</h3>
+        <p>Thanks for stopping by.</p>
+      </div>
+      <p className="hidden sm:block border-transparent border-b-2 text-sm">
+        © 2011–{currentYear} Brett Flora. All rights reserved.
+      </p>
+    </section>
+  )
+}
+
 type FooterHeadingProps = {
   children: React.ReactNode
 }
@@ -56,7 +60,7 @@ type FooterLinkProps = {
   children: React.ReactNode
 }
 
-const linkStyles = "block py-3 hover:underline"
+const linkStyles = 'block py-3 hover:underline'
 
 function FooterNextLink({ href, children }: FooterLinkProps) {
   return (
