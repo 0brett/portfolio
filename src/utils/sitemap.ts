@@ -1,6 +1,7 @@
 type Url = {
   href: string
   title: string
+  desc?: string
 }
 
 type Urls = {
