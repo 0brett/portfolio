@@ -1,11 +1,11 @@
-import Container from 'components/Container'
-import FeaturedProjects from 'components/FeaturedProjects'
-// import LatestDays from "components/LatestDays"
+import Container from 'comps/Container'
+import FeaturedProjects from 'comps/FeaturedProjects'
+// import LatestDays from "comps/LatestDays"
 
 export default function Home() {
   return (
     <Container>
-      <section className="mt-8 mb-4 prose prose-lg dark:prose-dark xs:mt-12 md:mt-16">
+      <section className="mt-4 mb-4 prose dark:prose-dark sm:prose-lg sm:mt-8 md:mt-12">
         <h1>Hey, I'm glad you're here.</h1>
         <p>
           My name is <strong>Brett Flora</strong>. I'm a software engineer based in the United

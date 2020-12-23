@@ -6,7 +6,7 @@ type Url = {
 const urls: Url[] = [
   {
     href: '/',
-    text: 'home'
+    text: 'homepage'
   },
   {
     href: '/projects',

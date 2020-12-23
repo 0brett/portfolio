@@ -1,4 +1,4 @@
-import Container from 'components/Container'
+import Container from 'comps/Container'
 
 export default function Dsgn() {
   return (

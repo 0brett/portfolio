@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import Head from 'next/head'
 
-import Nav from 'components/Nav'
-import Footer from 'components/Footer'
+import Navbar from 'comps/Navbar'
+import Footer from 'comps/Footer'
 
 type ContainerProps = {
   title?: string
@@ -13,7 +13,7 @@ type ContainerProps = {
 
 export default function Container({
   title,
-  className = 'w-full min-h-screen max-w-2xl px-3 mx-auto',
+  className = 'w-full min-h-screen max-w-2xl px-4 mx-auto',
   children
 }: ContainerProps) {
   return (
@@ -21,7 +21,7 @@ export default function Container({
       <Head>
         <title>{title ? `${title} – Brett Flora` : 'Brett Flora • Software Engineer'}</title>
       </Head>
-      <Nav />
+      <Navbar />
       <main className={className}>{children}</main>
       <Footer />
     </>
