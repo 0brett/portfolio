@@ -1,5 +1,7 @@
 // import NextLink from "next/link"
 
+import Prose from 'comps/Prose'
+
 export type ProjectProps = {
   href: string
   icon: string
@@ -28,9 +30,9 @@ export default function Project({ href, icon, title, desc }: ProjectProps) {
             {title}
           </h3>
         </div>
-        <p className="mt-3 text-lg leading-8 group-hover:text-blue-500 dark:group-hover:text-blue-400">
-          {desc}
-        </p>
+        <Prose className="mt-3 group-hover:text-blue-500 dark:group-hover:text-blue-400">
+          <p>{desc}</p>
+        </Prose>
       </div>
     </a>
     // </NextLink>

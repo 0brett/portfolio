@@ -13,7 +13,7 @@ type ContainerProps = {
 
 export default function Container({
   title,
-  className = 'w-full min-h-screen max-w-2xl px-4 mx-auto',
+  className = 'w-full min-h-screen max-w-7xl mx-auto px-4 px-4 sm:px-6 lg:px-8',
   children
 }: ContainerProps) {
   return (
