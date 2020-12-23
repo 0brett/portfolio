@@ -1,6 +1,6 @@
 import * as React from 'react'
 import NextLink from 'next/link'
-import urls from 'utils/sitemap'
+import sitemap from 'utils/sitemap'
 
 const buttonStyles =
   'text-gray-600 hover:bg-white hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-white'
@@ -54,9 +54,9 @@ export default function Navbar() {
             </div>
             <div className="hidden md:block md:ml-6">
               <div className="flex space-x-4">
-                {urls.map((url, idx) => (
+                {sitemap.topLevel.map((url, idx) => (
                   <NavLink key={idx} href={url.href}>
-                    {url.text}
+                    {url.title}
                   </NavLink>
                 ))}
               </div>
@@ -71,9 +71,9 @@ export default function Navbar() {
       */}
       <div className={`${isExpanded ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 xs:space-y-0 xs:grid xs:grid-cols-2">
-          {urls.map((url, idx) => (
+          {sitemap.topLevel.map((url, idx) => (
             <NavLink menuOpen={isExpanded} key={idx} href={url.href}>
-              {url.text}
+              {url.title}
             </NavLink>
           ))}
         </div>

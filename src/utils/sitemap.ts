@@ -1,29 +1,35 @@
 type Url = {
   href: string
-  text: string
+  title: string
 }
 
-const urls: Url[] = [
-  {
-    href: '/',
-    text: 'Homepage'
-  },
-  {
-    href: '/projects',
-    text: '/projects'
-  },
-  {
-    href: '/writing',
-    text: '/writing'
-  },
-  {
-    href: '/days-of-code',
-    text: '#100DaysOfCode'
-  },
-  {
-    href: '/dsgn',
-    text: '/dsgn'
-  }
-]
+type Urls = {
+  [key: string]: Url[]
+}
 
-export default urls
+const sitemap: Urls = {
+  topLevel: [
+    {
+      href: '/',
+      title: 'Homepage'
+    },
+    {
+      href: '/projects',
+      title: '/projects'
+    },
+    {
+      href: '/writing',
+      title: '/writing'
+    },
+    {
+      href: '/days-of-code',
+      title: '#100DaysOfCode'
+    },
+    {
+      href: '/dsgn',
+      title: '/dsgn'
+    }
+  ]
+}
+
+export default sitemap

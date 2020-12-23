@@ -1,6 +1,6 @@
 import * as React from 'react'
 import NextLink from 'next/link'
-import urls from 'utils/sitemap'
+import sitemap from 'utils/sitemap'
 
 const currentYear = new Date().getFullYear()
 
@@ -63,9 +63,9 @@ export default function Footer() {
               <div>
                 <FooterHeading>Sitemap</FooterHeading>
                 <ul className="mt-4 space-y-4">
-                  {urls.map((url, idx) => (
+                  {sitemap.topLevel.map((url, idx) => (
                     <li key={idx}>
-                      <FooterNextLink href={url.href}>{url.text}</FooterNextLink>
+                      <FooterNextLink href={url.href}>{url.title}</FooterNextLink>
                     </li>
                   ))}
                 </ul>
