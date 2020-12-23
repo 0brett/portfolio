@@ -3,13 +3,13 @@ import NextLink from 'next/link'
 import urls from 'utils/sitemap'
 
 const buttonStyles =
-  'text-gray-500 hover:bg-gray-200 hover:text-black dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white'
+  'text-gray-600 hover:bg-white hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-white'
 
 export default function Navbar() {
   const [isExpanded, setIsExpanded] = React.useState(false)
 
   return (
-    <nav className="bg-gray-100 dark:bg-gray-800 mb-4 sm:mb-8 md:mb-12">
+    <nav className="bg-gray-200 dark:bg-gray-800 mb-4 sm:mb-8 md:mb-12">
       <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
