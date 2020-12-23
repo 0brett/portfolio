@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
       },
       gridTemplateColumns: {
         footer: '3fr 2fr',
