@@ -5,6 +5,8 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+
+          <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
           <link href="/favicons/favicon.svg" type="image/svg+xml" rel="shortcut icon" />
           <link href="/favicons/favicon.ico" rel="alternate icon" />
           <link href="/favicons/site.webmanifest" rel="manifest" />
