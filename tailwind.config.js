@@ -25,13 +25,14 @@ module.exports = {
           css: {
             color: theme('colors.gray.900'),
             a: {
-              color: theme('colors.blue.600'),
+              color: theme('colors.blue.500'),
+              fontWeight: 500,
               '&:hover': {
                 textDecoration: 'none'
               }
             },
             'h1,h2,h3,h4,h5,h6': {
-              fontWeight: 900,
+              fontWeight: 800,
               'scroll-margin-top': defaultTheme.spacing[32]
             },
             strong: { fontWeight: 700 }
@@ -41,7 +42,7 @@ module.exports = {
           css: {
             color: theme('colors.gray.100'),
             a: {
-              color: theme('colors.blue.300')
+              color: theme('colors.blue.400')
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100')

@@ -12,9 +12,9 @@ export default function Project({ href, icon, title, desc }: ProjectProps) {
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className="group mt-8">
         <div className="flex items-center">
-          <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white group-hover:bg-blue-100 group-hover:text-blue-500">
+          <div className="flex items-center justify-center rounded-md text-blue-500 dark:text-blue-400 group-hover:text-gray-900 dark:group-hover:text-gray-200">
             <svg
-              className="h-8 w-8"
+              className="h-12 w-12"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -24,11 +24,13 @@ export default function Project({ href, icon, title, desc }: ProjectProps) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={icon} />
             </svg>
           </div>
-          <h3 className="ml-4 text-xl font-semibold md:text-2xl group-hover:text-blue-500 dark:group-hover:text-blue-300">
+          <h3 className="ml-4 text-xl font-semibold md:text-2xl group-hover:text-blue-500 dark:group-hover:text-blue-400">
             {title}
           </h3>
         </div>
-        <p className="mt-3 text-lg leading-8">{desc}</p>
+        <p className="mt-3 text-lg leading-8 group-hover:text-blue-500 dark:group-hover:text-blue-400">
+          {desc}
+        </p>
       </div>
     </a>
     // </NextLink>
