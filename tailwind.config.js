@@ -16,10 +16,10 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
       },
-      gridTemplateColumns: {
-        footer: '3fr 2fr',
-        subfooter: '2fr 1fr'
-      },
+      // gridTemplateColumns: {
+      //   footer: '3fr 2fr',
+      //   subfooter: '2fr 1fr'
+      // },
       typography: (theme) => ({
         DEFAULT: {
           css: {
