@@ -6,7 +6,7 @@ const buttonStyles =
   'text-gray-600 hover:bg-white hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-white'
 
 export default function Navbar() {
-  const [isExpanded, setIsExpanded] = React.useState(false)
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   return (
     <nav className="bg-gray-200 dark:bg-gray-800 mb-4 sm:mb-8 md:mb-12">
@@ -17,8 +17,8 @@ export default function Navbar() {
             <button
               id="menuButton"
               className={`inline-flex items-center justify-center p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white ${buttonStyles}`}
-              aria-expanded={isExpanded ? 'true' : 'false'}
-              onClick={() => setIsExpanded((prev) => !prev)}
+              aria-expanded={isMenuOpen ? 'true' : 'false'}
+              onClick={() => setIsMenuOpen((prev) => !prev)}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -33,7 +33,7 @@ export default function Navbar() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isExpanded ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                  d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
                 />
               </svg>
             </button>
@@ -69,10 +69,10 @@ export default function Navbar() {
         Mobile menu, toggle classes based on menu state.
         Menu open: "block", Menu closed: "hidden"
       */}
-      <div className={`${isExpanded ? 'block' : 'hidden'} md:hidden`}>
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 xs:space-y-0 xs:grid xs:grid-cols-2">
           {sitemap.topLevel.map((url, idx) => (
-            <NavLink menuOpen={isExpanded} key={idx} href={url.href}>
+            <NavLink menuOpen={isMenuOpen} key={idx} href={url.href}>
               {url.title}
             </NavLink>
           ))}
