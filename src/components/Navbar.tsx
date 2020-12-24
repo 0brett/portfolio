@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { LinkProps } from 'my-types'
 import NextLink from 'next/link'
 import sitemap from 'utils/sitemap'
 
@@ -82,11 +83,7 @@ export default function Navbar() {
   )
 }
 
-type NavLinkProps = {
-  menuOpen?: boolean
-  href: string
-  children: React.ReactNode
-}
+type NavLinkProps = LinkProps & { menuOpen?: boolean }
 
 function NavLink({ menuOpen, href, children }: NavLinkProps) {
   return (

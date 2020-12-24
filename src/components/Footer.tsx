@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { LinkProps } from 'my-types'
 import NextLink from 'next/link'
 import sitemap from 'utils/sitemap'
 
@@ -119,13 +120,7 @@ function FooterHeading({ children }: FooterHeadingProps) {
   )
 }
 
-type FooterLinkProps = {
-  title?: string
-  href: string
-  children: React.ReactNode
-}
-
-function FooterNextLink({ href, children }: FooterLinkProps) {
+function FooterNextLink({ href, children }: LinkProps) {
   return (
     <NextLink href={href}>
       <a className={linkStyles}>{children}</a>
@@ -133,7 +128,7 @@ function FooterNextLink({ href, children }: FooterLinkProps) {
   )
 }
 
-function FooterIconLink({ title, href, children }: FooterLinkProps) {
+function FooterIconLink({ title, href, children }: LinkProps) {
   return (
     <a href={href} className={iconStyles} target="_blank" rel="noopener noreferrer">
       <span className="sr-only">{title}</span>
