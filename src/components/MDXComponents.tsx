@@ -2,14 +2,10 @@ import * as React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import Container from 'components/Container'
 
-export type MDXProps = {
-  children: React.ReactNode
-}
-
-function Wrapper({ children }: MDXProps) {
+function Wrapper({ children }: { children: React.ReactNode }) {
   return <Container>{children}</Container>
 }
 
-export default function MDXComps({ children }: MDXProps) {
+export default function MDXComponents({ children }: { children: React.ReactNode }) {
   return <MDXProvider components={{ wrapper: Wrapper }}>{children}</MDXProvider>
 }

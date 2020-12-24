@@ -1,8 +1,4 @@
-type Url = {
-  href: string
-  title: string
-  desc?: string
-}
+import { Url } from 'my-types'
 
 type Urls = {
   [key: string]: Url[]
@@ -12,15 +8,15 @@ const sitemap: Urls = {
   topLevel: [
     {
       href: '/',
-      title: 'Homepage'
+      title: 'Home'
     },
     {
       href: '/projects',
-      title: '/projects'
+      title: 'Projects'
     },
     {
       href: '/writing',
-      title: '/writing'
+      title: 'Writing'
     },
     {
       href: '/days-of-code',
@@ -28,7 +24,7 @@ const sitemap: Urls = {
     },
     {
       href: '/dsgn',
-      title: '/dsgn'
+      title: 'DSGN'
     }
   ]
 }

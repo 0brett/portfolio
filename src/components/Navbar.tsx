@@ -1,5 +1,7 @@
 import * as React from 'react'
-import { LinkProps } from 'my-types'
+import { Url } from 'my-types'
+import { IconContext } from 'react-icons'
+import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
 import NextLink from 'next/link'
 import sitemap from 'utils/sitemap'
 
@@ -22,21 +24,9 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen((prev) => !prev)}
             >
               <span className="sr-only">Open main menu</span>
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
-                />
-              </svg>
+              <IconContext.Provider value={{ size: '100%', className: 'h-6 w-6' }}>
+                {isMenuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+              </IconContext.Provider>
             </button>
           </div>
           {/* desktop menu */}
@@ -83,7 +73,7 @@ export default function Navbar() {
   )
 }
 
-type NavLinkProps = LinkProps & { menuOpen?: boolean }
+type NavLinkProps = Url & { menuOpen?: boolean }
 
 function NavLink({ menuOpen, href, children }: NavLinkProps) {
   return (
