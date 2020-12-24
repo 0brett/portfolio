@@ -19,7 +19,7 @@ export default function Container({
   return (
     <>
       <Head>
-        <title>{title ? `${title} – Brett Flora` : 'Brett Flora • Software Engineer'}</title>
+        <title>{title ? title + ' – Brett Flora' : 'Brett Flora • Software Engineer'}</title>
       </Head>
       <Navbar />
       <main className={className}>{children}</main>
