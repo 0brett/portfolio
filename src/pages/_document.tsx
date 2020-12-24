@@ -22,7 +22,6 @@ class MyDocument extends Document {
             name="description"
             content="Software engineer, former UX Designer, and avocado enthusiast."
           />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
         <body className="text-gray-900 bg-white dark:text-gray-100 dark:bg-gray-900">
           <Main />
