@@ -1,6 +1,6 @@
 // import NextLink from "next/link"
 
-import Prose from 'comps/Prose'
+import Prose from 'components/Prose'
 
 export type ProjectProps = {
   href: string

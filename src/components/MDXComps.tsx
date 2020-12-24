@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { MDXProvider } from '@mdx-js/react'
-import Container from 'comps/Container'
+import Container from 'components/Container'
 
 export type MDXProps = {
   children: React.ReactNode

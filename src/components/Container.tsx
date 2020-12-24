@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import Head from 'next/head'
 
-import Navbar from 'comps/Navbar'
-import Footer from 'comps/Footer'
+import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
 
 type ContainerProps = {
   title?: string

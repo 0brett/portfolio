@@ -1,4 +1,4 @@
-import Project, { ProjectProps } from 'comps/Project'
+import Project, { ProjectProps } from 'components/Project'
 
 const featuredProjects: ProjectProps[] = [
   {
