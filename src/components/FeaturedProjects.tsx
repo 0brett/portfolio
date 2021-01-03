@@ -1,12 +1,10 @@
-import { MdWrapText } from 'react-icons/md'
-import { HiOutlineClipboardList } from 'react-icons/hi'
-import { VscBook } from 'react-icons/vsc'
+import { HiOutlineBookOpen, HiOutlineNewspaper, HiOutlineClipboardList } from 'react-icons/hi'
 import Project, { ProjectProps } from 'components/Project'
 
 const featuredProjects: ProjectProps[] = [
   {
     href: 'https://github.com/01brett/translation-medley',
-    icon: <VscBook />,
+    icon: <HiOutlineBookOpen />,
     icontitle: 'Cool icon',
     title: 'Translation Medley',
     desc:
@@ -14,7 +12,7 @@ const featuredProjects: ProjectProps[] = [
   },
   {
     href: 'https://github.com/01brett/poems',
-    icon: <MdWrapText />,
+    icon: <HiOutlineNewspaper />,
     icontitle: 'Cool icon',
     title: 'Poem Generator',
     desc:

@@ -6,7 +6,7 @@ import NextLink from 'next/link'
 import sitemap from 'lib/sitemap'
 import Logo from 'components/Logo'
 
-const buttonStyles = 'nav-link'
+const buttonStyles = 'nav-link font-medium'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -52,7 +52,7 @@ export default function Navbar() {
         Menu open: "block", Menu closed: "hidden"
       */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 xs:space-y-0 xs:grid xs:grid-cols-2">
+        <div className="px-2 pt-2 pb-3 space-y-2">
           {sitemap.topLevel.map((url, idx) => (
             <NavLink menuOpen={isMenuOpen} key={idx} href={url.href}>
               {url.title}

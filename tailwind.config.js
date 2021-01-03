@@ -5,15 +5,11 @@ module.exports = {
   purge: ['./src/**/*.tsx'],
   darkMode: false,
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: colors.white,
-      black: colors.black,
-      gray: colors.trueGray,
-      brand: colors.indigo
-    },
     extend: {
+      colors: {
+        gray: colors.gray,
+        brand: colors.indigo
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
       },

@@ -35,7 +35,7 @@ export default function Footer() {
           })}
         </div>
         <div className="mt-6 md:mt-0 md:order-2">
-          <p className="text-base sm:text-lg text-center text-gray-600">
+          <p className="type5 text-center text-gray-500">
             &copy; 2011-{curYear} Brett Flora. All rights reserved.
           </p>
         </div>
