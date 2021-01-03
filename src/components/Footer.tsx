@@ -21,7 +21,7 @@ export default function Footer() {
         ))}
       </nav>
       <div className="mt-4 md:flex md:items-center md:justify-between md:-mx-4.5">
-        <div className={'space-x-6 md:order-1 ' + footerLinksStyles}>
+        <div className={'md:order-1 ' + footerLinksStyles}>
           {sitemap.social.map((url, idx) => {
             var IconName: any = url.icon
             return (

@@ -16,10 +16,8 @@ module.exports = {
       lite2: '#F5F5F5',
       lite3: '#E5E5E5',
       primary: {
-        DEFAULT: '#9333EA'
-      },
-      accent: {
-        DEFAULT: '#F59E0B'
+        bg: '#EDE9FE',
+        DEFAULT: '#7C3AED'
       }
     },
     extend: {

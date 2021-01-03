@@ -17,6 +17,6 @@
     @apply text-base sm:text-lg md:text-xl;
   }
   .nav-link {
-    @apply text-base sm:text-lg py-2.5 rounded text-blk3 hover:text-blk hover:bg-lite3 focus:outline-black;
+    @apply text-base sm:text-lg py-2.5 rounded-sm text-blk3 hover:text-blk hover:bg-lite3 focus:outline-black;
   }
 }
