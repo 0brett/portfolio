@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply text-blk bg-lite1;
+    @apply text-gray-900 bg-gray-50;
   }
 }
 
@@ -17,6 +17,6 @@
     @apply text-base sm:text-lg md:text-xl;
   }
   .nav-link {
-    @apply text-base sm:text-lg py-2.5 rounded-sm text-blk3 hover:text-blk hover:bg-lite3 focus:outline-black;
+    @apply text-base sm:text-lg py-2.5 rounded-sm text-gray-600 hover:text-brand-700 hover:bg-gray-200 focus:outline-black;
   }
 }

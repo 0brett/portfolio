@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* desktop menu */}
           <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-between">
             <div className="flex-shrink-0 flex items-center">
-              <Logo className="h-8 w-auto text-primary" />
+              <Logo className="h-8 w-auto text-brand-600" />
             </div>
             <div className="hidden md:block md:ml-6">
               <div className="flex space-x-4">

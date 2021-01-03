@@ -9,7 +9,7 @@ export default function Footer() {
   const footerLinkStyles = 'nav-link mx-2 my-1'
 
   return (
-    <footer className="screen-container mt-16 md:mt-32 py-16 overflow-hidden">
+    <footer className="screen-container mt-16 md:mt-32 py-16">
       <nav
         className={'flex-wrap md:justify-start md:-ml-5.5 ' + footerLinksStyles}
         aria-label="Footer"
@@ -35,7 +35,7 @@ export default function Footer() {
           })}
         </div>
         <div className="mt-6 md:mt-0 md:order-2">
-          <p className="text-base sm:text-lg text-center text-blk3">
+          <p className="text-base sm:text-lg text-center text-gray-600">
             &copy; 2011-{curYear} Brett Flora. All rights reserved.
           </p>
         </div>

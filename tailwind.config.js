@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./src/**/*.tsx'],
@@ -7,18 +8,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: '#FFFFFF',
-      blk: '#171717',
-      blk1: '#262626',
-      blk2: '#404040',
-      blk3: '#525252',
-      lite1: '#F9F9F9',
-      lite2: '#F5F5F5',
-      lite3: '#E5E5E5',
-      primary: {
-        bg: '#EDE9FE',
-        DEFAULT: '#7C3AED'
-      }
+      white: colors.white,
+      black: colors.black,
+      gray: colors.trueGray,
+      brand: colors.indigo
     },
     extend: {
       fontFamily: {
