@@ -30,8 +30,8 @@ const featuredProjects: ProjectProps[] = [
 
 export default function Projects() {
   return (
-    <section className="mt-12 mb-4">
-      <h2 className="font-black text-xl md:text-2xl tracking-wide uppercase">Featured Projects</h2>
+    <section className="mt-8 sm:mt-12">
+      <h2 className="font-black text-lg md:text-xl tracking-wide uppercase">Featured Projects</h2>
 
       {featuredProjects.map((proj: ProjectProps, idx: number) => (
         <Project

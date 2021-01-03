@@ -15,7 +15,7 @@ export type ProjectProps = {
 export default function Project({ href, title, desc, icon, icontitle }: ProjectProps) {
   return (
     <>
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         <div className="flex items-center">
           <Icon
             h="h-12"
