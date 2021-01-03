@@ -1,10 +1,5 @@
-import * as React from 'react'
-
-type ProseProps = {
-  className?: string
-  children: React.ReactNode
-}
-
-export default function Prose({ className, children }: ProseProps) {
-  return <main className={`prose dark:prose-dark sm:prose-lg ${className}`}>{children}</main>
+import extend from 'lib/extend'
+export default function Prose({ className, children }: React.HTMLProps<HTMLDivElement>) {
+  const classNames = extend('prose sm:prose-lg md:prose-xl', className)
+  return <article className={classNames}>{children}</article>
 }

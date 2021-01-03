@@ -1,28 +1,17 @@
-import * as React from 'react'
-
 import Head from 'next/head'
-
+import extend from 'lib/extend'
 import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
 
-type ContainerProps = {
-  title?: string
-  className?: string
-  children: React.ReactNode
-}
-
-export default function Container({
-  title,
-  className = 'w-full min-h-screen max-w-7xl mx-auto px-4 px-4 sm:px-6 lg:px-8',
-  children
-}: ContainerProps) {
+export default function Container({ title, className, children }: React.HTMLProps<HTMLDivElement>) {
+  const classNames = extend('screen-container', className)
   return (
     <>
       <Head>
-        <title>{title ? title + ' – Brett Flora' : 'Brett Flora • Software Engineer'}</title>
+        <title>{title ? title : 'Brett Flora • Software Engineer'}</title>
       </Head>
       <Navbar />
-      <main className={className}>{children}</main>
+      <main className={classNames}>{children}</main>
       <Footer />
     </>
   )

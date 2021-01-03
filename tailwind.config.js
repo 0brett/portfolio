@@ -2,59 +2,46 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.tsx'],
-  darkMode: 'media',
+  darkMode: false,
   theme: {
-    screens: {
-      xs: '490px',
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1496px'
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#FFFFFF',
+      blk: '#171717',
+      blk1: '#262626',
+      blk2: '#404040',
+      blk3: '#525252',
+      lite1: '#F9F9F9',
+      lite2: '#F5F5F5',
+      lite3: '#E5E5E5',
+      primary: {
+        DEFAULT: '#9333EA'
+      },
+      accent: {
+        DEFAULT: '#F59E0B'
+      }
     },
     extend: {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
       },
-      // gridTemplateColumns: {
-      //   footer: '3fr 2fr',
-      //   subfooter: '2fr 1fr'
-      // },
-      typography: (theme) => ({
+      margin: {
+        '-4.5': '-1.125rem',
+        '-5.5': '-1.375rem'
+      },
+      typography: {
         DEFAULT: {
           css: {
-            color: theme('colors.gray.900'),
             a: {
-              color: theme('colors.blue.500'),
-              fontWeight: 500,
               '&:hover': {
                 textDecoration: 'none'
               }
-            },
-            'h1,h2,h3,h4,h5,h6': {
-              fontWeight: 800,
-              'scroll-margin-top': defaultTheme.spacing[32]
-            },
-            strong: { fontWeight: 700 }
-          }
-        },
-        dark: {
-          css: {
-            color: theme('colors.gray.100'),
-            a: {
-              color: theme('colors.blue.400')
-            },
-            'h1,h2,h3,h4,h5,h6': {
-              color: theme('colors.gray.100')
-            },
-            strong: { color: theme('colors.gray.200') }
+            }
           }
         }
-      })
+      }
     }
-  },
-  variants: {
-    typography: ['responsive', 'dark']
   },
   plugins: [require('@tailwindcss/typography')]
 }
