@@ -69,7 +69,7 @@ type NavLinkProps = Url & { menuOpen?: boolean }
 function NavLink({ menuOpen, href, children }: NavLinkProps) {
   return (
     <NextLink href={href}>
-      <a className={`px-3.5 font-medium ${buttonStyles} ${menuOpen ? 'block' : null}`}>
+      <a className={`px-3.5 font-semibold ${buttonStyles} ${menuOpen ? 'block' : null}`}>
         {children}
       </a>
     </NextLink>
