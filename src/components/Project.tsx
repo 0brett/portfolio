@@ -18,7 +18,7 @@ export default function Project({ href, title, desc, icon, icontitle }: ProjectP
             <span className="sr-only">{icontitle}</span>
             {icon}
           </Icon>
-          <h3 className="ml-4 text-xl font-semibold md:text-2xl group-hover:text-primary">
+          <h3 className="ml-4 text-2xl font-semibold sm:text-3xl group-hover:text-primary">
             {title}
           </h3>
         </div>

@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="screen-container mt-16 md:mt-32 py-16 overflow-hidden">
       <nav
-        className={'flex-wrap md:justify-start md:-mx-5.5 ' + footerLinksStyles}
+        className={'flex-wrap md:justify-start md:-ml-5.5 ' + footerLinksStyles}
         aria-label="Footer"
       >
         {sitemap.topLevel.map((url, idx) => (
@@ -20,7 +20,7 @@ export default function Footer() {
           </Link>
         ))}
       </nav>
-      <div className="mt-4 md:flex md:items-center md:justify-between md:-mx-4.5">
+      <div className="mt-4 md:flex md:items-center md:justify-between md:-ml-4.5">
         <div className={'md:order-1 ' + footerLinksStyles}>
           {sitemap.social.map((url, idx) => {
             var IconName: any = url.icon
