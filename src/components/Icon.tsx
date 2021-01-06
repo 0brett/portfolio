@@ -1,5 +1,5 @@
 import { IconContext, IconBaseProps } from 'react-icons'
-import extend from 'lib/extend'
+import cn from 'classnames'
 
 type MyIconProps = {
   w?: string
@@ -13,7 +13,7 @@ export default function Icon(props: MyIconProps) {
     <IconContext.Provider
       value={{
         size: '100%',
-        className: extend(`${w} ${h}`, className)
+        className: cn(w, h, className)
       }}
       {...rest}
     />
