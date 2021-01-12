@@ -1,5 +1,5 @@
 import { IconContext, IconBaseProps } from 'react-icons'
-import cn from 'classnames'
+import cn from 'clsx'
 
 type MyIconProps = {
   w?: string

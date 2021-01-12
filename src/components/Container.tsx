@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import cn from 'classnames'
+import cn from 'clsx'
 import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
 
