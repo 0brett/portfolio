@@ -1,12 +1,17 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import GoogleFonts from 'next-google-fonts'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap" />
         <Head>
+          <link
+            rel="preload"
+            href="/fonts/inter-var-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           <link href="/favicons/favicon.svg" type="image/svg+xml" rel="shortcut icon" />
           <link href="/favicons/favicon.ico" rel="alternate icon" />
           <link href="/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#4F46E5" />
