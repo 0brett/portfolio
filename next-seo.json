@@ -1,0 +1,32 @@
+{
+  "title": "Brett Flora • Software Engineer",
+  "titleTemplate": "%s | Brett Flora",
+  "description": "Software engineer, former UX Designer, and avocado enthusiast.",
+  "favicon": "/favicons/favicon.ico",
+  "additionalMetaTags": [
+    { "property": "author", "content": "Brett Flora" },
+    {
+      "property": "keywords",
+      "content": "software, engineering, design, javascript, typescript"
+    }
+  ],
+  "twitter": {
+    "cardType": "summary",
+    "handle": "1brett_",
+    "site": "1brett_"
+  },
+  "openGraph": {
+    "type": "website",
+    "site_name": "Brett's Website",
+    "profile": {
+      "firstName": "Brett"
+    },
+    "images": [
+      {
+        "url": "/images/og.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}

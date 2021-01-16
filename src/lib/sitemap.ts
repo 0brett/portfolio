@@ -18,23 +18,23 @@ const sitemap: Urls = {
     {
       href: '/',
       title: 'Home'
-    },
-    {
-      href: '/projects',
-      title: 'Projects'
-    },
-    {
-      href: '/writing',
-      title: 'Writing'
-    },
-    {
-      href: '/days-of-code',
-      title: '#100DaysOfCode'
-    },
-    {
-      href: '/dsgn',
-      title: 'DSGN'
     }
+    // {
+    //   href: '/projects',
+    //   title: 'Projects'
+    // },
+    // {
+    //   href: '/writing',
+    //   title: 'Writing'
+    // },
+    // {
+    //   href: '/days-of-code',
+    //   title: '#100DaysOfCode'
+    // },
+    // {
+    //   href: '/dsgn',
+    //   title: 'DSGN'
+    // }
   ],
   social: [
     {

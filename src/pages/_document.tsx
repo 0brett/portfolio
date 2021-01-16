@@ -1,6 +1,22 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
+  // static async getInitialProps(ctx: DocumentContext) {
+  //   const initialProps = await Document.getInitialProps(ctx)
+  //   const styles = extractCritical(initialProps.html)
+  //   return {
+  //     ...initialProps,
+  //     styles: (
+  //       <>
+  //         {initialProps.styles}
+  //         <style
+  //           data-emotion-css={styles.ids.join(' ')}
+  //           dangerouslySetInnerHTML={{ __html: styles.css }}
+  //         />
+  //       </>
+  //     )
+  //   }
+  // }
   render() {
     return (
       <Html lang="en">
@@ -12,9 +28,8 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link href="/favicons/favicon.svg" type="image/svg+xml" rel="shortcut icon" />
-          <link href="/favicons/favicon.ico" rel="alternate icon" />
-          <link href="/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#4F46E5" />
+          <link href="/favicons/favicon.ico" rel="shortcut icon" />
+          <link href="/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#6366F1" />
           <link href="/favicons/site.webmanifest" rel="manifest" />
           <link href="/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
           <link href="/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
@@ -23,10 +38,6 @@ class MyDocument extends Document {
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
           <meta content="/static/favicons/browserconfig.xml" name="msapplication-config" />
-          <meta
-            name="description"
-            content="Software engineer, former UX Designer, and avocado enthusiast."
-          />
         </Head>
         <body>
           <Main />
