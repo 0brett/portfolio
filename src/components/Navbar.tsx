@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Url } from 'local'
 import Icon from 'components/Icon'
 import { MdClose, MdMenu } from 'react-icons/md'
 import NextLink from 'next/link'
@@ -64,7 +63,10 @@ export default function Navbar() {
   )
 }
 
-type NavLinkProps = Url & { menuOpen?: boolean }
+interface NavLinkProps extends React.HTMLProps<HTMLAnchorElement> {
+  href: string
+  menuOpen?: boolean
+}
 
 function NavLink({ menuOpen, href, children }: NavLinkProps) {
   return (
