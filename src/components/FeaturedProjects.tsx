@@ -1,5 +1,6 @@
 import { HiOutlineBookOpen, HiOutlineNewspaper, HiOutlineClipboardList } from 'react-icons/hi'
-import Project, { ProjectProps } from 'components/Project'
+import Project from 'components/Project'
+import type { ProjectProps } from 'components/Project'
 
 const featuredProjects: ProjectProps[] = [
   {
