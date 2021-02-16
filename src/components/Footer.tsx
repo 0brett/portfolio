@@ -2,8 +2,6 @@ import Link from "components/Link"
 import Icon from "components/Icon"
 import sitemap from "util/sitemap"
 
-const curYear = new Date().getFullYear()
-
 export default function Footer() {
   const footerLinksStyles = "flex justify-center"
   const footerLinkStyles = "nav-link mx-2 my-1"
@@ -36,7 +34,7 @@ export default function Footer() {
         </div>
         <div className="mt-6 md:mt-0 md:order-2">
           <p className="type5 text-center text-gray-500">
-            &copy; 2011-{curYear} Brett Flora. All rights reserved.
+            &copy; Brett Flora. All rights reserved.
           </p>
         </div>
       </div>
