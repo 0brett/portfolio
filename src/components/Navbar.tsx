@@ -1,11 +1,11 @@
-import * as React from 'react'
-import Icon from 'components/Icon'
-import { MdClose, MdMenu } from 'react-icons/md'
-import NextLink from 'next/link'
-import sitemap from 'lib/sitemap'
-import Logo from 'components/Logo'
+import * as React from "react"
+import Icon from "components/Icon"
+import { MdClose, MdMenu } from "react-icons/md"
+import NextLink from "next/link"
+import sitemap from "util/sitemap"
+import Logo from "components/Logo"
 
-const buttonStyles = 'nav-link font-medium'
+const buttonStyles = "nav-link font-medium"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -19,11 +19,11 @@ export default function Navbar() {
             <button
               id="menuButton"
               className={`inline-grid place-items-center px-2.5 -ml-2 ${buttonStyles}`}
-              aria-expanded={isMenuOpen ? 'true' : 'false'}
+              aria-expanded={isMenuOpen ? "true" : "false"}
               onClick={() => setIsMenuOpen((prev) => !prev)}
             >
               <Icon>
-                <span className="sr-only">{isMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
+                <span className="sr-only">{isMenuOpen ? "Close main menu" : "Open main menu"}</span>
                 {isMenuOpen ? <MdClose /> : <MdMenu />}
               </Icon>
             </button>
@@ -50,7 +50,7 @@ export default function Navbar() {
         Mobile menu, toggle classes based on menu state.
         Menu open: "block", Menu closed: "hidden"
       */}
-      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
+      <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-2">
           {sitemap.topLevel.map((url, idx) => (
             <NavLink menuOpen={isMenuOpen} key={idx} href={url.href}>
@@ -71,7 +71,7 @@ interface NavLinkProps extends React.HTMLProps<HTMLAnchorElement> {
 function NavLink({ menuOpen, href, children }: NavLinkProps) {
   return (
     <NextLink href={href}>
-      <a className={`px-3.5 font-medium ${buttonStyles} ${menuOpen ? 'block' : null}`}>
+      <a className={`px-3.5 font-medium ${buttonStyles} ${menuOpen ? "block" : null}`}>
         {children}
       </a>
     </NextLink>
