@@ -1,6 +1,6 @@
-import Container from "components/Container"
-import Prose from "components/Prose"
-import FeaturedProjects from "components/FeaturedProjects"
+import Container from "components/container"
+import Prose from "components/prose"
+import FeaturedProjects from "components/featured-projects"
 
 export default function Home() {
   return (

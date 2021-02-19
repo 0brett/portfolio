@@ -1,7 +1,7 @@
-import { FaGithubAlt } from 'react-icons/fa'
-import Link from 'components/Link'
-import Icon from 'components/Icon'
-import Prose from 'components/Prose'
+import { FaGithubAlt } from "react-icons/fa"
+import Link from "components/link"
+import Icon from "components/icon"
+import Prose from "components/prose"
 
 export type ProjectProps = {
   href: string

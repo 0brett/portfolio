@@ -1,9 +1,9 @@
 import * as React from "react"
-import Icon from "components/Icon"
+import Icon from "components/icon"
 import { MdClose, MdMenu } from "react-icons/md"
 import NextLink from "next/link"
-import sitemap from "util/sitemap"
-import Logo from "components/Logo"
+import sitemap from "utils/sitemap"
+import Logo from "components/logo"
 
 const buttonStyles = "nav-link font-medium"
 

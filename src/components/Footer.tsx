@@ -1,6 +1,6 @@
-import Link from "components/Link"
-import Icon from "components/Icon"
-import sitemap from "util/sitemap"
+import Link from "components/link"
+import Icon from "components/icon"
+import sitemap from "utils/sitemap"
 
 export default function Footer() {
   const footerLinksStyles = "flex justify-center"
