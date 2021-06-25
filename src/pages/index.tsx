@@ -8,7 +8,7 @@ export default function Home() {
       <Prose>
         <h1>Hey, I'm glad you're here.</h1>
         <p>
-          My name is <strong>Brett Flora</strong>. I'm a software engineer based in San Francisco.
+          My name is <strong>Brett Flora</strong>. I'm a software engineer.
           Earlier in my career, I was a UX/Product Designer.
         </p>
       </Prose>
